@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap');
+
+:root {
+    --body-color: #FEFDF9;
+    --brimary-color: #F15D51;
+    --desc-color: #787779;
+    --heading-newlist-color: #ffffff;
+    --heading-color: 000010;
+    --secondary-color-prim: #EBAE57;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    padding: 2rem 20%;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--heading-color);
+    font-weight: bolder;
+}
+
+p {
+    color: var(--desc-color);
+    font-size: .80rem;
+}
+span{
+    font-size:2rem;
+    color: #CAC9CE;
+    font-weight: bold;
+}
+button {
+    background-color: var(--brimary-color);
+    padding: 1rem 3rem;
+    border: none;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #000;
+    font-weight: bold;
+    transition: all ease-in-out .3s;
+}
+
+/*==============HEADER===============*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-logo {
+    width: 50px;
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+li a {
+    color: var(--heading-color);
+}
+
+li a:hover {
+    color: var(--brimary-color);
+    border-bottom: 2px solid var(--brimary-color);
+    transition: ease .3s;
+}
+
+/*==========HOME=============*/
+
+.img__home {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.home__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home__content-btn {
+    width: 50%;
+}
+
+.home__content h1 {
+    width: 30%;
+}
+
+/*=======CARD=============*/
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+
+}
+.card__body{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+ 
+   
+
+}
+.card__body-img{
+    width: 200px;
+ 
+}
+.card__body-content{
+margin-bottom: 1rem;
+}
+
+/*responsive*/
+@media (max-width:325px){
+  
+}
